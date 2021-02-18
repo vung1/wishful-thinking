@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/vung1/wishful-thinking/issues"
   },
-  "homepage": "https://github.com/vung1/wishful-thinking#readme"
+  "homepage": "https://github.com/vung1/wishful-thinking#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0"
+  }
 }
