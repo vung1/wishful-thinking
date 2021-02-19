@@ -8,6 +8,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const methodOverride = require("method-override");
+const ejsMate = require('ejs-mate');
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
@@ -17,6 +18,7 @@ const app = express();
 // all environments
 app.set("port", process.env.PORT || 3000);
 app.set("views", path.join(__dirname, "views"));
+app.engine('ejs', ejsMate);
 app.set("view engine", "ejs");
 
 // app.use(express.favicon());
@@ -40,17 +42,52 @@ app.use(function (err, req, res, next) {
     res.render("error");
 });
 
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
-
-// catch 404 and forward to error handler
-app.use(function (req, res, next) {
-    next(createError(404));
-});
+// app.use("/", indexRouter);
+// app.use("/users", usersRouter);
 
 app.get("/", (req, res) => {
     res.render("home");
 });
+
+app.get("/profile", (req, res) => {
+    res.render("profile")
+})
+
+app.get("/friends", (req, res) => {
+    res.render("friends")
+})
+
+app.get("/calendar", (req, res) => {
+    res.render("calendar")
+})
+
+app.get("/help", (req, res) => {
+    res.render("help")
+})
+
+app.get("/additem", (req, res) => {
+    res.render("addItem")
+})
+
+app.get("/addList", (req, res) => {
+    res.render("addList")
+})
+
+app.get("/itemDetails", (req, res) => {
+    res.render("itemDetails")
+})
+
+app.get("/listDetails", (req, res) => {
+    res.render("listDetails")
+})
+
+app.get("/userProfile", (req, res) => {
+    res.render("userProfile")
+})
+
+app.get("/addFriend", (req, res) => {
+    res.render("addFriend")
+})
 
 http.createServer(app).listen(app.get("port"), function () {
     console.log("Express server listening on port " + app.get("port"));

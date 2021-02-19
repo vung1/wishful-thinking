@@ -1,0 +1,17 @@
+.friend-text {
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+.underline {
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+}
+.text {
+  font-size: 0.75rem;
+}
