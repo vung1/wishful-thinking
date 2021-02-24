@@ -89,6 +89,26 @@ app.get("/addFriend", (req, res) => {
     res.render("addFriend")
 })
 
+app.get("/loading", (req, res) => {
+    res.render("loading")
+})
+
+app.get("/editProfile", (req, res) => {
+    res.render("editProfile")
+})
+
+app.get("/dateDetails", (req, res) => {
+    res.render("dateDetails")
+})
+
+app.get("/addDate", (req, res) => {
+    res.render("addDate")
+})
+
+app.get("/register", (req, res) => {
+    res.render("register")
+})
+
 http.createServer(app).listen(app.get("port"), function () {
     console.log("Express server listening on port " + app.get("port"));
 });
