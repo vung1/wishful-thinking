@@ -13,6 +13,8 @@ const ejsMate = require("ejs-mate");
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 
+const data = require("./data.json");
+
 const app = express();
 
 // all environments
@@ -50,64 +52,66 @@ app.get("/", (req, res) => {
 });
 
 app.get("/profile", (req, res) => {
-    res.render("profile")
-})
+  res.render("profile");
+});
 
 app.get("/friends", (req, res) => {
-    res.render("friends")
-})
+  res.render("friends");
+});
 
 app.get("/calendar", (req, res) => {
-    res.render("calendar")
-})
+  res.render("calendar");
+});
 
 app.get("/help", (req, res) => {
-    res.render("help")
-})
+  res.render("help");
+});
 
 app.get("/additem", (req, res) => {
-    res.render("addItem")
-})
+  res.render("addItem");
+});
 
 app.get("/addList", (req, res) => {
-    res.render("addList")
-})
+  res.render("addList");
+});
 
 app.get("/itemDetails", (req, res) => {
-    res.render("itemDetails")
-})
+  res.render("itemDetails");
+});
 
 app.get("/listDetails", (req, res) => {
-    res.render("listDetails")
-})
+  res.render("listDetails");
+});
 
-app.get("/userProfile", (req, res) => {
-    res.render("userProfile")
-})
+app.get("/userProfile/:id", (req, res) => {
+  console.log("I AM HERE");
+  console.log(data.friends[1]);
+  res.render("userProfile", data);
+});
 
 app.get("/addFriend", (req, res) => {
-    res.render("addFriend")
-})
+  res.render("addFriend");
+});
 
 app.get("/loading", (req, res) => {
-    res.render("loading")
-})
+  res.render("loading");
+});
 
 app.get("/editProfile", (req, res) => {
-    res.render("editProfile")
-})
+  res.render("editProfile");
+});
 
 app.get("/dateDetails", (req, res) => {
-    res.render("dateDetails")
-})
+  res.render("dateDetails");
+});
 
 app.get("/addDate", (req, res) => {
-    res.render("addDate")
-})
+  res.render("addDate");
+});
 
 app.get("/register", (req, res) => {
-    res.render("register")
-})
+  res.render("register");
+});
 
 http.createServer(app).listen(app.get("port"), function () {
   console.log("Express server listening on port " + app.get("port"));

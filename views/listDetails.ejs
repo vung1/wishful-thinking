@@ -1,4 +1,34 @@
 <% layout('layouts/boilerplate')%>
-<div>
-    List details form
+<div class="container">
+    <div class="d-flex justify-content-center pb-3">
+        <h1><u>List Details</u></h1>
+    </div>
+
+    <div class="d-flex">
+        <h4><b>Name: </b></h4>
+        <p>Brian Nguyen</p>
+    </div>
+
+    <div class="d-flex">
+        <h4><b>Occasion: </b></h4>
+        <p>Birthday</p>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-end">
+        <h4><b>Date: </b></h4>
+        <p>3/29/2021</p>
+    </div>
+
+    <div>
+        <div class="d-flex justify-content-between align-items-end">
+            <h4>Items</h4>
+            <p class="text"><a href="/addItem">add item</a></p>
+        </div>
+        <div class="text">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="/itemDetails">Squishmallow</a></li>
+                <li class="list-group-item"><a href="/itemDetails">Glitchpop 2.0 skin bundle</a></li>
+              </ul>
+        </div>
+    </div>
 </div>

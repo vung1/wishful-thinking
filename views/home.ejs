@@ -7,7 +7,7 @@
     <title>Wishful Thinking</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
 </head>
 
 <body class="d-flex text-white bg-dark">
@@ -16,14 +16,13 @@
             <div>
                 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="/">Wishful Thinking</a>
+                        <a class="navbar-brand" href="/profile">Wishful Thinking</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link" href="/">Home</a>
                                 <a class="nav-link" href="/profile">Profile</a>
                                 <a class="nav-link" href="/friends">Friends</a>
                                 <a class="nav-link" href="/calendar">Calendar</a>
@@ -32,7 +31,14 @@
                         </div>
                     </div>
                 </nav>
-                <h1 class="text-center"> This is the home page</h1>
+                <div class="main">
+                  <p class="sign" align="center">Sign in</p>
+                  <form class="form1">
+                    <input class="un " type="text" align="center" placeholder="Username">
+                    <input class="pass" type="password" align="center" placeholder="Password">
+                    <a class="submit" align="center" href="/profile">Sign in</a>
+                    <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+                  </div>
             </div>
         </header>
     </div>
@@ -45,50 +51,4 @@
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
 </body>
-
-</html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/stylesheets/login.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-  </head>
-  <body>
-
-      <form action="index.html" class="login-form">
-        <h1>Login</h1>
-
-        <div class="txtb">
-          <input type="text">
-          <span data-placeholder="Username"></span>
-        </div>
-
-        <div class="txtb">
-          <input type="password">
-          <span data-placeholder="Password"></span>
-        </div>
-
-        <input type="submit" class="logbtn" value="Login">
-
-        <div class="bottom-text">
-          Don't have account? <a href="#">Sign up</a>
-        </div>
-
-      </form>
-
-      <script type="text/javascript">
-      $(".txtb input").on("focus",function(){
-        $(this).addClass("focus");
-      });
-
-      $(".txtb input").on("blur",function(){
-        if($(this).val() == "")
-        $(this).removeClass("focus");
-      });
-
-      </script>
-
-
-  </body>
 </html>
