@@ -1,4 +1,31 @@
 <% layout('layouts/boilerplate')%>
-<div>
-    add list form
+<div class="container">
+    <div class="d-flex justify-content-center pb-3">
+        <h1><u>Add List</u></h1>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Name:</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name of person the list is for">
+        </div>
+        <div class="form-group mt-3">
+            <label for="exampleFormControlSelect1">Occasion:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Christmas</option>
+                <option>Valentine's Day</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group mt-3">
+            <label for="exampleFormControlInput1">Date:</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="MM/DD/YYYY">
+        </div>        
+    </form>
+
+    <div class="justify-content-center btn-toolbar mt-5">
+        <a href="/listDetails"><button type="button" class="btn btn-danger btn-sm mr-5">Cancel</button></a>
+        <a href="/listDetails"><button type="button" class="btn btn-success btn-sm">Add</button></a>
+    </div>
 </div>

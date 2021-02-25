@@ -1,4 +1,22 @@
 <% layout('layouts/boilerplate')%>
-<div>
-    Add friend
+
+
+<div class="container">
+	<div class="row">
+		<h2 class="text-center"> Search for a Friend</h2>
+           <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <form onSubmit="submit()">
+                        <input type="text" class="  search-query form-control" placeholder="Search" />
+                    </form>
+                </div>
+            </div>
+	</div>
 </div>
+<script>
+    const value ="";
+    const submit = (e) => {
+        console.log("HERE");
+        e.preventDefault();
+    }
+</script>

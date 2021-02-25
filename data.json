@@ -3,44 +3,51 @@
 		{
 			"name": "Amanda Kim",
 			"birthday": "March 1",
-			"profileImage": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-            "wishlist": ["Sephora Gift Card", "Flowers"]	
+			"profileImage": "https://loremflickr.com/320/240/person",
+            "wishlist": ["Sephora Gift Card", "Flowers"],
+			"id": "collapseOne"	
 		},
 		{
             "name": "Andrew Jackson",
 			"birthday": "March 15",
-			"profileImage": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-            "wishlist": ["Revival for Dummies Textbook", "$20 Bill"]		
+			"profileImage": "https://loremflickr.com/320/240/dog",
+            "wishlist": ["Revival for Dummies Textbook", "$20 Bill"],
+			"id": "collapseTwo"
 		},
 		{
             "name": "Brian Nguyen",
 			"birthday": "March 29",
-			"profileImage": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-            "wishlist": ["Hydroflask", "Macbook Air", "Teddy Bear"]			
+			"profileImage": "https://loremflickr.com/320/240/cat",
+            "wishlist": ["Hydroflask", "Macbook Air", "Teddy Bear"],
+			"id": "collapseThree"			
 		},
 		{
 			"name": "Mary Nguyen",
 			"birthday": "May 9",
-			"profileImage": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-            "wishlist": ["Valorant Credits", "Gaming Laptop"]		
+			"profileImage": "https://i.imgur.com/ggvppTI.jpg",
+            "wishlist": ["Valorant Credits", "Gaming Laptop"],
+			"id": "collapseFour"
 		},
 		{
             "name": "Minhtrang Chu",
 			"birthday": "July 30",
-			"profileImage": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-            "wishlist": ["Beanie", "Boba Gift Cards", "Squishmallow"]	
+			"profileImage": "https://loremflickr.com/320/240/girl",
+            "wishlist": ["Beanie", "Boba Gift Cards", "Squishmallow"],
+			"id": "collapseFive"
 		},
 		{
             "name": "Paul Su",
 			"birthday": "November 1",
-			"profileImage": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-            "wishlist": ["Nike Air Force 1"]	
+			"profileImage": "https://loremflickr.com/320/240/boy",
+            "wishlist": ["Nike Air Force 1"],
+			"id": "collapseSix"
 		},
         {
             "name": "Paul Woo",
 			"birthday": "April 10",
-			"profileImage": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-            "wishlist": ["Silver Rank in Valorant", "Glitchpop 2.0 skin bundle"]	
+			"profileImage": "https://loremflickr.com/320/240/teenager",
+            "wishlist": ["Silver Rank in Valorant", "Glitchpop 2.0 skin bundle"],
+			"id": "collapseSeven"
 		}
 	]
 }

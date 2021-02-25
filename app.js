@@ -44,7 +44,7 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
-app.use("/", indexRouter);
+// app.use("/", indexRouter);
 // app.use("/users", usersRouter);
 
 app.get("/", (req, res) => {
@@ -56,7 +56,7 @@ app.get("/profile", (req, res) => {
 });
 
 app.get("/friends", (req, res) => {
-  res.render("friends");
+  res.render("friends", { data });
 });
 
 app.get("/calendar", (req, res) => {
@@ -67,8 +67,12 @@ app.get("/help", (req, res) => {
   res.render("help");
 });
 
-app.get("/additem", (req, res) => {
+app.get("/addItem", (req, res) => {
   res.render("addItem");
+});
+
+app.get("/addWishListItem", (req, res) => {
+  res.render("addWishListItem");
 });
 
 app.get("/addList", (req, res) => {
@@ -81,12 +85,6 @@ app.get("/itemDetails", (req, res) => {
 
 app.get("/listDetails", (req, res) => {
   res.render("listDetails");
-});
-
-app.get("/userProfile/:id", (req, res) => {
-  console.log("I AM HERE");
-  console.log(data.friends[1]);
-  res.render("userProfile", data);
 });
 
 app.get("/addFriend", (req, res) => {

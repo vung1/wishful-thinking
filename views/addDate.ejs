@@ -1,4 +1,27 @@
 <% layout('layouts/boilerplate')%>
-<div>
-    add date
+<div class="container">
+    <div class="d-flex justify-content-center pb-3">
+        <h1><u>Add Date</u></h1>
+    </div>
+    <form>
+        <div class="form-group">
+        <label for="exampleFormControlInput1">Name:</label>
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+        
+        <div class="form-group mt-3">
+            <label for="exampleFormControlInput1">Date:</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="MM/DD/YYYY">
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="exampleFormControlTextarea1">Description:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="justify-content-center btn-toolbar mt-3">
+            <a href="/calendar"><button type="button" class="btn btn-danger btn-sm mr-5">Cancel</button></a>
+            <a href="/calendar"><button type="button" class="btn btn-success btn-sm">Add</button></a>
+        </div>
+    </form>
 </div>

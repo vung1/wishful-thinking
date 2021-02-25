@@ -14,7 +14,7 @@ body {
 
 .sign {
   padding-top: 40px;
-  color: #8c55aa;
+  color: #000;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   font-size: 23px;
@@ -73,7 +73,7 @@ form.form1 {
   cursor: pointer;
   border-radius: 5em;
   color: #fff;
-  background: linear-gradient(to right, #9c27b0, #e040fb);
+  background: linear-gradient(to right, #000, #4c4c4d);
   border: 0;
   padding-left: 40px;
   padding-right: 40px;
@@ -87,13 +87,13 @@ form.form1 {
 
 .forgot {
   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-  color: #e1bee7;
+  color: #000;
   padding-top: 15px;
 }
 
 a {
   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-  color: #e1bee7;
+  color: #000;
   text-decoration: none;
 }
 

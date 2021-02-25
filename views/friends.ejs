@@ -1,36 +1,66 @@
 <% layout('layouts/boilerplate')%>
-<div class="container">
-    <div class="d-flex justify-content-center pb-3">
-        <h1><u>Friends</u></h1>
-    </div>
-    <div class="mb-4">
-        <p class="underline friend-text">A</p>
-        <ul class="list-group list-group-flush">
-            <li><a href="/userProfile">Amanda Kim</a></li>
-            <li><a href="/userProfile">Andrew Jackson</a></li>
-        </ul>
-    </div>
-    <div class="mb-4">
-        <p class="underline friend-text">B</p>
-        <ul class="list-group list-group-flush">
-            <li><a href="/userProfile">Brian Nguyen</a></li>
-        </ul>
-    </div>
-    <div class="mb-4">
-        <p class="underline friend-text">M</p>
-        <ul class="list-group list-group-flush">
-            <li><a href="/userProfile">Mary Nguyen</a></li>
-            <li><a href="/userProfile">Minhtrang Chu</a></li>
-        </ul>
-    </div>
-    <div class="mb-4">
-        <p class="underline friend-text">P</p>
-        <ul class="list-group list-group-flush">
-            <li><a href="/userProfile">Paul Su</a></li>
-            <li><a href="/userProfile">Paul Woo</a></li>
-        </ul>
-    </div>
-    <div class="d-flex justify-content-center">
-       <a href="/addFriend"><button type="button" class="btn btn-secondary btn-sm">Add Friend</button></a>
-    </div>
+<div class="d-flex justify-content-between">
+  <h2 class="mb-4"><u>Friend's List</u></h2>
+  <a href="/addFriend"><button type="button" class="btn btn-success btn-sm">Add Friend</button></a>
 </div>
+<div class="container shadow">
+    <div class="top mb-3">
+    </div>
+    <div>
+      <% for (let friend of data.friends){%>
+        <div class="row">
+          <img class=".img-responsive col-3" width="100px" src='<%=friend.profileImage %>' />
+          <div class="col-9">
+            <h3><%= friend.name %></h3>
+            <h6><%= friend.birthday %></h6>
+          </div>
+        </div>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed text-right" data-toggle="collapse" data-parent="#accordion" href="#<%=friend.id %>" >Wishlist</a>
+                </h4>
+            </div>
+            <div id="<%=friend.id %>" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% for (let item of friend.wishlist){%>
+                    <p><%= item %></p>
+                  <% } %>
+                </div>
+            </div>
+          </div>
+        </div>
+        <hr/>
+      <% } %>
+</div>
+
+
+
+  <!-- from help for dropdown -->
+  <style>
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+    </style>
