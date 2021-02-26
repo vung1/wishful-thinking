@@ -4,7 +4,7 @@
 			"name": "Amanda Kim",
 			"birthday": "March 1",
 			"month": "MAR",
-			"profileImage": "https://loremflickr.com/320/240/person",
+			"profileImage": "https://i.imgur.com/jzi5bL8.png",
             "wishlist": ["Sephora Gift Card", "Flowers"],
 			"id": "collapseOne"	
 		},
@@ -12,7 +12,7 @@
             "name": "Andrew Jackson",
 			"birthday": "March 15",
 			"month": "MAR",
-			"profileImage": "https://loremflickr.com/320/240/dog",
+			"profileImage": "https://i.imgur.com/SmbDDFj.jpg",
             "wishlist": ["Revival for Dummies Textbook", "$20 Bill"],
 			"id": "collapseTwo"
 		},
@@ -20,7 +20,7 @@
             "name": "Brian Nguyen",
 			"birthday": "March 29",
 			"month": "MAR",
-			"profileImage": "https://loremflickr.com/320/240/cat",
+			"profileImage": "https://i.imgur.com/PkcLjPt.jpg",
             "wishlist": ["Hydroflask", "Macbook Air", "Teddy Bear"],
 			"id": "collapseThree"			
 		},
@@ -28,7 +28,7 @@
             "name": "Paul Woo",
 			"birthday": "April 10",
 			"month": "APR",
-			"profileImage": "https://loremflickr.com/320/240/teenager",
+			"profileImage": "https://i.imgur.com/Tsjhis5.jpg",
             "wishlist": ["Silver Rank in Valorant", "Glitchpop 2.0 skin bundle"],
 			"id": "collapseSeven"
 		},
@@ -44,7 +44,7 @@
             "name": "Minhtrang Chu",
 			"birthday": "July 30",
 			"month": "JULY",
-			"profileImage": "https://loremflickr.com/320/240/girl",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
             "wishlist": ["Beanie", "Boba Gift Cards", "Squishmallow"],
 			"id": "collapseFive"
 		},
@@ -52,7 +52,7 @@
             "name": "Paul Su",
 			"birthday": "November 1",
 			"month": "NOV",
-			"profileImage": "https://loremflickr.com/320/240/boy",
+			"profileImage": "https://i.imgur.com/MiRgS4H.jpg",
             "wishlist": ["Nike Air Force 1"],
 			"id": "collapseSix"
 		}
