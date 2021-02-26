@@ -25,14 +25,6 @@
 			"id": "collapseThree"			
 		},
 		{
-            "name": "Paul Woo",
-			"birthday": "April 10",
-			"month": "APR",
-			"profileImage": "https://i.imgur.com/Tsjhis5.jpg",
-            "wishlist": ["Silver Rank in Valorant", "Glitchpop 2.0 skin bundle"],
-			"id": "collapseSeven"
-		},
-		{
 			"name": "Mary Nguyen",
 			"birthday": "May 9",
 			"month": "MAY",
@@ -52,9 +44,17 @@
             "name": "Paul Su",
 			"birthday": "November 1",
 			"month": "NOV",
-			"profileImage": "https://i.imgur.com/MiRgS4H.jpg",
+			"profileImage": "https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/doctor/card/dr-paul-su-md-107-320x320-2x.jpg",
             "wishlist": ["Nike Air Force 1"],
 			"id": "collapseSix"
+		},
+		{
+            "name": "Paul Woo",
+			"birthday": "April 10",
+			"month": "APR",
+			"profileImage": "https://i.imgur.com/Tsjhis5.jpg",
+            "wishlist": ["Silver Rank in Valorant", "Glitchpop 2.0 skin bundle"],
+			"id": "collapseSeven"
 		}
 	],
 	"help": [
