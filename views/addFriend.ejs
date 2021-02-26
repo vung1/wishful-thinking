@@ -1,22 +1,13 @@
 <% layout('layouts/boilerplate')%>
-
-
-<div class="container">
-	<div class="row">
-		<h2 class="text-center"> Search for a Friend</h2>
-           <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <form onSubmit="submit()">
-                        <input type="text" class="  search-query form-control" placeholder="Search" />
-                    </form>
-                </div>
-            </div>
-	</div>
+<h2 class="text-center mb-4"> Search for a Friend</h2>
+<div id="custom-search-input">
+    <div class="input-group justify-content-center">
+        <form action="/searchDummy" method="GET">
+            <input type="text" style="width: 280px" class="search-query form-control" placeholder="Search"/>
+        </form>
+    </div>
 </div>
-<script>
-    const value ="";
-    const submit = (e) => {
-        console.log("HERE");
-        e.preventDefault();
-    }
-</script>
+
+<div class="justify-content-center d-flex mt-5">
+    <a href="/friends"><button type="button" class="btn btn-danger btn-sm">Cancel</button></a>
+</div>

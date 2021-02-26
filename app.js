@@ -51,6 +51,10 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/signout", (req, res) => {
+  res.redirect("/");
+});
+
 app.get("/profile", (req, res) => {
   res.render("profile");
 });
@@ -60,23 +64,35 @@ app.get("/friends", (req, res) => {
 });
 
 app.get("/calendar", (req, res) => {
-  res.render("calendar");
+  res.render("calendar", { data });
 });
 
 app.get("/help", (req, res) => {
-  res.render("help");
+  res.render("help", { data });
 });
 
 app.get("/addItem", (req, res) => {
   res.render("addItem");
 });
 
+app.get("/addItemDummy", (req, res) => {
+  res.render("addItemDummy");
+});
+
 app.get("/addWishListItem", (req, res) => {
   res.render("addWishListItem");
 });
 
+app.get("/addWishListItemDummy", (req, res) => {
+  res.render("addWishListItemDummy");
+});
+
 app.get("/addList", (req, res) => {
   res.render("addList");
+});
+
+app.get("/addListDummy", (req, res) => {
+  res.render("addListDummy");
 });
 
 app.get("/itemDetails", (req, res) => {
@@ -91,6 +107,14 @@ app.get("/addFriend", (req, res) => {
   res.render("addFriend");
 });
 
+app.get("/addFriendDummy", (req, res) => {
+  res.render("addFriendDummy", { data });
+});
+
+app.get("/searchDummy", (req, res) => {
+  res.render("searchDummy");
+});
+
 app.get("/loading", (req, res) => {
   res.render("loading");
 });
@@ -99,16 +123,24 @@ app.get("/editProfile", (req, res) => {
   res.render("editProfile");
 });
 
+app.get("/editProfileDummy", (req, res) => {
+  res.render("editProfileDummy");
+});
+
 app.get("/dateDetails", (req, res) => {
   res.render("dateDetails");
 });
 
-app.get("/addDate", (req, res) => {
-  res.render("addDate");
+app.get("/addDateDummy", (req, res) => {
+  res.render("addDateDummy", { data });
 });
 
 app.get("/register", (req, res) => {
   res.render("register");
+});
+
+app.get("/addDate", (req, res) => {
+  res.render("addDate");
 });
 
 http.createServer(app).listen(app.get("port"), function () {

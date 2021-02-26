@@ -1,4 +1,27 @@
 <% layout('layouts/boilerplate')%>
-<div>
-    edit profile
+<div class="container">
+    <div class="d-flex justify-content-center pb-3">
+        <h1><u>Edit Profile</u></h1>
+    </div>
+    <form>
+        <div class="form-group">
+        <label for="exampleFormControlInput1">Name:</label>
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+        
+        <div class="form-group mt-3">
+            <label for="exampleFormControlInput1">Birthday:</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="MM/DD/YYYY">
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="exampleFormControlFile1">Profile Picture: </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+
+        <div class="justify-content-center btn-toolbar mt-3">
+            <a href="/profile"><button type="button" class="btn btn-danger btn-sm mr-5">Cancel</button></a>
+            <a href="/editProfileDummy"><button type="button" class="btn btn-success btn-sm">Done</button></a>
+        </div>
+    </form>
 </div>
