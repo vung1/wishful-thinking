@@ -1,9 +1,10 @@
 <% layout('layouts/boilerplate')%>
+
 <div class="container">
     <a href="/editProfile" class="d-flex justify-content-end mb-3"><img src="https://i.imgur.com/dZq6GOm.png" alt="" width="40"></a>
-    <img class="mx-auto d-block mb-1" src="https://i.imgur.com/PXb4HGt.png" alt="profile picture">
+    <img class="mx-auto d-block mb-1" src="https://i.imgur.com/PXb4HGt.png" id="profile_picture" alt="profile picture">
     <div class="text-center mb-4">
-        <p class="mb-1">Victor Ung</p>
+        <p class="mb-1" id="name">Victor Ung</p>
         <p>Birthday: 12/8</p>
     </div>
     <div class="mb-5">
@@ -31,3 +32,20 @@
         </div>
     </div>
 </div>
+<script>
+    const url_string = window.location.href;
+    console.log(url_string);
+    const url = new URL(url_string);
+    const name = url.searchParams.get("name") || "Brian Nguyen";
+
+    const index = url_string.indexOf("profile_pic") + 12;
+    const picture_url = url_string.substring(index);
+    console.log(picture_url);
+
+    const picture = picture_url || "https://i.imgur.com/PXb4HGt.png";
+    console.log(name);
+    console.log(picture);
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("profile_picture").src = picture;
+
+</script>

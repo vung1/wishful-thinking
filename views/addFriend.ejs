@@ -1,10 +1,17 @@
 <% layout('layouts/boilerplate')%>
+<script src="./js/friends.js"></script>
+
 <h2 class="text-center mb-4"> Search for a Friend</h2>
 <div id="custom-search-input">
-    <div class="input-group justify-content-center">
-        <form action="/searchDummy" method="GET">
-            <input type="text" style="width: 280px" class="search-query form-control" placeholder="Search"/>
-        </form>
+    <div class="justify-content-center"> <!-- removed input-group-->
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <div>
+        <ul id="myUL">
+        <% for (let friend of data.friends){%>   
+        <li><a href="#"><%= friend.name %></a></li>
+        <% } %>
+        </ul>
+        </div>
     </div>
 </div>
 
