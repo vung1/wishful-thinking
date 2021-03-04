@@ -5,13 +5,16 @@
 <div id="custom-search-input">
     <div class="justify-content-center"> <!-- removed input-group-->
         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-        <div>
         <ul id="myUL">
-        <% for (let friend of data.friends){%>   
-        <li><a href="#"><%= friend.name %></a></li>
+        <% for (let stranger of data.strangers){%>   
+             <form class="container" method="GET" action="/addFriendList/<%=stranger.name%>" >
+                <li class="row mb-2">
+                  <a class="col-10" href="#"><%=stranger.name%></a>
+                  <input type="submit" class="btn btn-success col-2" value="Add Friend">
+                </li>
+            </form>
         <% } %>
         </ul>
-        </div>
     </div>
 </div>
 

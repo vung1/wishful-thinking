@@ -8,13 +8,14 @@
     </div>
     <div>
       <% for (let friend of data.friends){%>
-        <div class="row">
-          <img class=".img-responsive col-3" width="100px" src='<%=friend.profileImage %>' />
-          <div class="col-9">
-            <h3><%= friend.name %></h3>
-            <h6><%= friend.birthday %></h6>
+          <div class="row">
+            <img class=".img-responsive col-3" width="100px" src='<%=friend.profileImage %>' />
+            <div class="col-9">
+              <h3><%= friend.name %></h3>
+              <h6>Birthday: <%= friend.birthday %></h6>
+              <button style="padding: .25rem .4rem; font-size: .875rem; line-height: .5; border-radius: .2rem" class="btn btn-danger">Delete</button>
+            </div>
           </div>
-        </div>
         <div class="panel-group" id="accordion">
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -24,9 +25,11 @@
             </div>
             <div id="<%=friend.id %>" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <% for (let item of friend.wishlist){%>
-                    <p><%= item %></p>
-                  <% } %>
+                  <ul>
+                    <% for (let item of friend.wishlist){%>
+                      <li class="mb-2" style="color: #4D8BFF"><a href="/itemDetails/<%=friend.name%>/<%=item.name%>"><%=item.name%></a></li>
+                    <% } %>
+                  </ul>
                 </div>
             </div>
           </div>

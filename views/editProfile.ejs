@@ -3,25 +3,25 @@
     <div class="d-flex justify-content-center pb-3">
         <h1><u>Edit Profile</u></h1>
     </div>
-    <form>
+    <form method="get" action="/editMe">
         <div class="form-group">
         <label for="exampleFormControlInput1">Name:</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="name">
         </div>
         
         <div class="form-group mt-3">
             <label for="exampleFormControlInput1">Birthday:</label>
-            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="MM/DD/YYYY">
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="MM/DD/YYYY" name="birthday">
         </div>
 
         <div class="form-group mt-3">
             <label for="exampleFormControlFile1">Profile Picture: </label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>
+            <input type="link" class="form-control" id="exampleFormControlInput1" placeholder="Link to profile picture" name="profileImage">
+        </div>
 
         <div class="justify-content-center btn-toolbar mt-3">
             <a href="/profile"><button type="button" class="btn btn-danger btn-sm mr-5">Cancel</button></a>
-            <a href="/editProfileDummy"><button type="button" class="btn btn-success btn-sm">Done</button></a>
+            <input type="submit" class="btn btn-success btn-sm">
         </div>
     </form>
 </div>

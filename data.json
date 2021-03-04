@@ -1,11 +1,80 @@
 {
+	"me": {
+			"name": "Victor Ung",
+			"birthday": "December 8",
+			"profileImage": "https://i.imgur.com/XVmQnQQ.png",
+			"wishlist": [
+				{
+					"name": "Sephora Gift Card",
+					"description": "flowers",
+					"price": "$3.70",
+					"link": "https://www.https://www.google.com//"
+				}, 
+				{
+					"name": "Flowers",
+					"description": "yellow tulips",
+					"price": "$3.70",
+					"link": "https://www.https://www.google.com//"
+				}
+			],
+			"wishlistIdeas": [ 
+			{
+				"name": "Brian Nguyen",
+				"occasion": "Birthday",
+				"date": "03/29/2021",
+				"items": [
+					{
+						"name": "Boba Gift Card",
+						"description": "I like mango matcha!",
+						"price": "$5.00",
+						"link": "https://www.google.com/"
+					}, 
+					{
+						"name": "Car",
+						"description": "NEW",
+						"price": "$19,123",
+						"link": "https://www.google.com/"
+					}
+				]
+			},
+			{
+				"name": "Pauline Woo",
+				"occasion": "Christmas",
+				"date": "12/25/2021",
+				"items": [
+					{
+						"name": "Panda Express Gift Card",
+						"description": "food",
+						"price": "2.70",
+						"link": "https://www.google.com/"
+					}, 
+					{
+						"name": "Taco Bell Gift Card",
+						"description": "we love tacos",
+						"price": "$3.70",
+						"link": "https://www.google.com/"
+				}]
+			}]
+	},
 	"friends": [
 		{
 			"name": "Amanda Kim",
 			"birthday": "March 1",
 			"month": "MAR",
 			"profileImage": "https://i.imgur.com/jzi5bL8.png",
-            "wishlist": ["Sephora Gift Card", "Flowers"],
+            "wishlist": [
+				{
+					"name": "Suitcase",
+					"description": "brown, new",
+					"price": "$10.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Lipstick",
+					"description": "to be professional",
+					"price": "$5.00",
+					"link": "https://www.google.com/"
+				}],
 			"id": "collapseOne"	
 		},
 		{
@@ -13,7 +82,20 @@
 			"birthday": "March 15",
 			"month": "MAR",
 			"profileImage": "https://i.imgur.com/SmbDDFj.jpg",
-            "wishlist": ["Revival for Dummies Textbook", "$20 Bill"],
+            "wishlist": [
+				{
+					"name": "$20 Bill",
+					"description": "ahh the memories",
+					"price": "$20",
+					"link": "https://www.google.com/"
+				},
+				{
+					"name": "History Textbook",
+					"description": "Who am I?",
+					"price": "$130.00",
+					"link": "https://www.google.com/"
+				}
+			],
 			"id": "collapseTwo"
 		},
 		{
@@ -21,7 +103,19 @@
 			"birthday": "March 29",
 			"month": "MAR",
 			"profileImage": "https://i.imgur.com/PkcLjPt.jpg",
-            "wishlist": ["Hydroflask", "Macbook Air", "Teddy Bear"],
+            "wishlist": [
+				{
+				"name": "Valorant Gift Card",
+				"description": "to buy skins",
+				"price": "$40.00",
+				"link": "https://www.google.com/"
+				}, 
+				{
+				"name": "Pencil",
+				"description": "mechanical",
+				"price": "$3.00",
+				"link": "https://www.google.com/"
+				}],
 			"id": "collapseThree"			
 		},
 		{
@@ -29,7 +123,19 @@
 			"birthday": "May 9",
 			"month": "MAY",
 			"profileImage": "https://i.imgur.com/ggvppTI.jpg",
-            "wishlist": ["Valorant Credits", "Gaming Laptop", "OP Academy Hoodie"],
+            "wishlist": [
+				{
+				"name": "OP Academy Hoodie",
+				"description": "<3 Wardell",
+				"price": "$55.00",
+				"link": "https://www.google.com/"
+				}, 
+				{
+				"name": "Laptop",
+				"description": "gaming",
+				"price": "$1000.00",
+				"link": "https://www.google.com/"
+				}],
 			"id": "collapseFour"
 		},
 		{
@@ -37,7 +143,19 @@
 			"birthday": "July 30",
 			"month": "JULY",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
-            "wishlist": ["Beanie", "Boba Gift Cards", "Squishmallow"],
+            "wishlist": [
+				{
+				"name": "Sephora Gift Card",
+				"description": "flowers",
+				"price": "$3.70",
+				"link": "https://www.google.com/"
+				}, 
+				{
+				"name": "Flowers",
+				"description": "yellow tulips",
+				"price": "$3.70",
+				"link": "https://www.google.com/"
+				}],
 			"id": "collapseFive"
 		},
 		{
@@ -45,7 +163,19 @@
 			"birthday": "November 1",
 			"month": "NOV",
 			"profileImage": "https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/doctor/card/dr-paul-su-md-107-320x320-2x.jpg",
-            "wishlist": ["Nike Air Force 1"],
+            "wishlist": [
+				{
+				"name": "iPad",
+				"description": "to take notes",
+				"price": "$500.00",
+				"link": "https://www.google.com/"
+				}, 
+				{
+				"name": "Cup",
+				"description": "to drink coffee",
+				"price": "$10.00",
+				"link": "https://www.google.com/"
+				}],
 			"id": "collapseSix"
 		},
 		{
@@ -53,7 +183,19 @@
 			"birthday": "April 10",
 			"month": "APR",
 			"profileImage": "https://i.imgur.com/Tsjhis5.jpg",
-            "wishlist": ["Silver Rank in Valorant", "Glitchpop 2.0 skin bundle"],
+            "wishlist": [
+				{
+				"name": "Shoes",
+				"description": "to walk",
+				"price": "$60.00",
+				"link": "https://www.google.com/"
+				}, 
+				{
+				"name": "Coat",
+				"description": "to keep warm",
+				"price": "$20.70",
+				"link": "https://www.google.com/"
+				}],
 			"id": "collapseSeven"
 		}
 	],
@@ -82,6 +224,528 @@
 			"title": "How do I a add an item to one of my other wishlist?",
 			"description": "Tap on the specific list you want to add an item to, which will redirect you to a page only for that wishlist. On that page, tap on the 'add item' button at the bottom.",
 			"id": "collapseFive"
+		}
+	],
+	"strangers": [
+		{
+			"name": "Abby Apple",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Target Gift Card",
+					"description": "fun",
+					"price": "$20",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Balloons",
+					"description": "yellow",
+					"price": "$3.99",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseEight"
+		},
+		{
+			"name": "Brandon Berry",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "GameStop Gift Card",
+					"description": "games",
+					"price": "$60.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Strawberries",
+					"description": "fruit",
+					"price": "$5.98",
+					"link": "https://www.google.com/"
+				}],
+			"id": "collapseNine"
+		},
+		{
+			"name": "Carl Cook",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Knife",
+					"description": "chop chop chop",
+					"price": "$20.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Mop",
+					"description": "messy kitchen",
+					"price": "$5.00",
+					"link": "https://www.google.com/"
+				}],
+			"id": "collapseTen"
+		},
+		{
+			"name": "Daniel Doofenshmirtz",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Platypus Plushy",
+					"description": "PERRY!!",
+					"price": "$20.32",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Lab Coat",
+					"description": "white",
+					"price": "$9.42",
+					"link": "https://www.google.com/"
+				}],
+			"id": "collapseEleven"
+		},
+		{
+			"name": "Ethan Easter",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Egg",
+					"description": "to paint",
+					"price": "$12.09",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Paintbrush",
+					"description": "to paint",
+					"price": "$7.70",
+					"link": "https://www.google.com/"
+				}],
+			"id": "collapseTwelve"
+		},
+		{
+			"name": "Freddy Forensics",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Magnifying Glass",
+					"description": "to look at things",
+					"price": "$24.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Daphne Plush",
+					"description": "my love",
+					"price": "$40.40",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseThirteen"
+		},
+		{
+			"name": "Gary Gill",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Tablet",
+					"description": "for lectures",
+					"price": "$200.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Mic",
+					"description": "to talk",
+					"price": "$400.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseFourteen"
+		},
+		{
+			"name": "Heather Honda",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Honda Civic",
+					"description": "car",
+					"price": "$25,000",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Soda",
+					"description": "Coke",
+					"price": "$12.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseFifteen"
+		},
+		{
+			"name": "Isaac Int",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Nerf Gun",
+					"description": "to play with friends",
+					"price": "$15.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Fan",
+					"description": "it's getting hot",
+					"price": "$3.70",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseSixteen"
+		},
+		{
+			"name": "Justin Jiffy",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Engine Oil",
+					"description": "rusty car",
+					"price": "$9.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Scissors",
+					"description": "broken pair",
+					"price": "$9.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseSeventeen"
+		},
+		{
+			"name": "Krystal Kim",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Donuts",
+					"description": "FOODIE!!!",
+					"price": "$12.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Phone Case",
+					"description": "pink, casetify",
+					"price": "$30.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseEighteen"
+		},
+		{
+			"name": "Lily Lim",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Fish Tank",
+					"description": "small",
+					"price": "$70.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Goldfish",
+					"description": "PetCo",
+					"price": "$12.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseNineteen"
+		},
+		{
+			"name": "Michael Meyers",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Knife",
+					"description": "big and sharp",
+					"price": "$20.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Mask",
+					"description": "clean",
+					"price": "$3.70",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwenty"
+		},
+		{
+			"name": "Nathan Nolan",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Speakers",
+					"description": "Dual Force XCON 21's",
+					"price": "$30.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Phone",
+					"description": "Samsung Note 10+",
+					"price": "$400.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentyOne"
+		},
+		{
+			"name": "Oscar Oliver",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Fake Oscar",
+					"description": "to practice speech",
+					"price": "$15.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Markers",
+					"description": "to draw",
+					"price": "$12.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentyTwo"
+		},
+		{
+			"name": "Pauline Poo",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Plunger",
+					"description": "for toilet",
+					"price": "$20.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Key Cap",
+					"description": "koi fish",
+					"price": "$10.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentyThree"
+		},
+		{
+			"name": "Quinn Quest",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "New Pan",
+					"description": "I broke mine making pancakes omg!",
+					"price": "$15.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Red Scarf",
+					"description": "Mikasa vibes",
+					"price": "$10.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentyFour"
+		},
+		{
+			"name": "Ryan Reynolds",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Interstellar DVD",
+					"description": "My all-time favorite movie omg.",
+					"price": "$20.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "La La Land DVD",
+					"description": "My second all-time favorite movie lol.",
+					"price": "$20.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentyFive"
+		},
+		{
+			"name": "Samantha Song",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Orange Hair Dye",
+					"description": "Manic Panic brand is dope :3",
+					"price": "$15.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Hair Bleach",
+					"description": "I'm going through a phase??!",
+					"price": "$10.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentySix"
+		},
+		{
+			"name": "Tyler Tailor",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Pencil Pouch",
+					"description": "For the upcoming school year.",
+					"price": "$5.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "MUJI Pens",
+					"description": "Assorted colors!!!",
+					"price": "$10.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentySeven"
+		},
+		{
+			"name": "Unduwap Usain",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Raising Cane's Gift Card",
+					"description": "I love their texas toast!",
+					"price": "$20.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Towels",
+					"description": "Lilac or yellow is fine.",
+					"price": "$15.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentyEight"
+		},
+		{
+			"name": "Victor Vo",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "PC",
+					"description": "Need to reach Radiant in Valorant!",
+					"price": "$2000.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Ducky Keyboard",
+					"description": "Need a good keyboard to reach Radiant heh",
+					"price": "$90.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseTwentyNine"
+		},
+		{
+			"name": "William Williams",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Tennis Racket",
+					"description": "I like the Babolat Puredrive!",
+					"price": "$70.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Tennis Balls",
+					"description": "A bunch please!!",
+					"price": "$20.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseThirty"
+		},
+		{
+			"name": "Xavier X-ray",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Inflatable Pool",
+					"description": "For the spring and summertime.",
+					"price": "$55.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Very Large Soccer Ball",
+					"description": "I just really want this.",
+					"price": "$20.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseThirtyOne"
+		},
+		{
+			"name": "Yoo Jin Yoo",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Lamb Squishmallow",
+					"description": "The light green lamb.",
+					"price": "$50.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Cast Iron Skillet",
+					"description": "Need this for brunch ideas",
+					"price": "$70.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseThirtyTwo"
+		},
+		{
+			"name": "Zach Zucchini",
+			"birthday": "July 30",
+			"month": "JULY",
+			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
+			"wishlist": [
+				{
+					"name": "Elephant Squishmallow",
+					"description": "Purple elephant!",
+					"price": "$50.00",
+					"link": "https://www.google.com/"
+				}, 
+				{
+					"name": "Toolkit",
+					"description": "One kit with all the essentials.",
+					"price": "$115.00",
+					"link": "https://www.google.com/"
+				}],			
+			"id": "collapseThirtyThree"
 		}
 	]
 }
