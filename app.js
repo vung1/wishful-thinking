@@ -169,7 +169,8 @@ app.get("/addMyList", function (req, res) {
     const occasion = req.query.occasion;
     let date = req.query.date;
     date = formatDate(date);
-    const newItem = { name, occasion, date };
+    const items = [];
+    const newItem = { name, occasion, date, items };
     data.me.wishlistIdeas.push(newItem);
     res.render("profile", { data });
 });
