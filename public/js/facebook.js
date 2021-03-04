@@ -46,7 +46,7 @@ function testAPI() {
         const birthday = response.birthday;
         console.log("This is my birthday " + birthday);
 
-        // window.location = "/profile?name=" + name + "&profile_pic=" + picture;
+        window.location = "/profile?name=" + name + "&profile_pic=" + picture;
     });
 }
 
