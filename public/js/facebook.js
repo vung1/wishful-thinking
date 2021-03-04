@@ -40,12 +40,13 @@ function testAPI() {
     console.log("Welcome!  Fetching your information.... ");
     FB.api("/me?fields=name,picture.width(480),birthday", function (response) {
         console.log("Successful login for: " + response.name);
-        // document.getElementById("status").innerHTML =
-        //     "Thanks for logging in, " + response.name + "!";
+
         const name = response.name;
         const picture = response.picture.data.url;
+        const birthday = response.birthday;
+        console.log("This is my birthday " + birthday);
 
-        window.location = "/profile?name=" + name + "&profile_pic=" + picture;
+        // window.location = "/profile?name=" + name + "&profile_pic=" + picture;
     });
 }
 
