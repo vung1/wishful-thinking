@@ -192,7 +192,7 @@ app.get("/profile", (req, res) => {
     const link = req._parsedOriginalUrl.href;
     if (link.length > 8) {
         let name = link.substring(14, link.indexOf("profile_pic") - 1);
-        name = name.replaceAll("%20", " ");
+        name = name.split("%20").join(" ");
         const profileImage = link.substring(link.indexOf("profile_pic") + 12);
         console.log(data.me.name);
 
