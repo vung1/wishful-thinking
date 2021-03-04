@@ -220,8 +220,8 @@ app.get("/addFriendList/:friendName", (req, res) => {
 
     data.friends.push(newFriend[0]);
 
-    // res.redirect("friends");
-    res.render("friends", { data });
+    res.redirect("/friends");
+    // res.render("friends", { data });
 });
 
 const convertMonth = (date) => {
