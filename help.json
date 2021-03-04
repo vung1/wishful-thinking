@@ -1,0 +1,29 @@
+{
+    "helps": [
+        {
+            "title": "What's the difference between the user's wishlist and other lists",
+            "description": "The user's wishlist is their primary, public wishlist that lets other users know what to get them for any occasion (Christmas, birthday, etc.). 'Other lists' refers to private lists where users can keep track of anything they want (i.e. brainstorm ideas for what they think would be a good gift for someone).",
+            "id": "collapseOne"
+        },
+        {
+            "title": "How do I view another user's public wishlist?",
+            "description": "To view another user's wishlist, you must add them as a friend.",
+            "id": "collapseTwo"
+        },
+        {
+            "title": "How do I add a friend?",
+            "description": "To add a friend, navigate to the 'Friends' page using the navbar in the top right. Tap on the 'Add Friend' button at the top right corner. Search for the user and tap on 'Add Friend'",
+            "id": "collapseThree"
+        },
+        {
+            "title": "How do I add an item?",
+            "description": "On your profile page, you can add an item to your primary wishlist with a the 'add item' button on the right.",
+            "id": "collapseFour"
+        },
+        {
+            "title": "How do I a add an item to one of my other wishlist?",
+            "description": "Tap on the specific list you want to add an item to, which will redirect you to a page only for that wishlist. On that page, tap on the 'add item' button at the bottom.",
+            "id": "collapseFive"
+        }
+    ]
+}

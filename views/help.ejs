@@ -3,16 +3,16 @@
 <div class="container">
 <div class="panel-group" id="accordion">
     <div class="faqHeader">General questions</div>
-    <% for (let help of data.help) { %>
+    <% for (let info of help.helps) { %>
     <div class="panel panel-default pb-3">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#<%= help.id %>"> <%= help.title %></a>
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#<%= info.id %>"> <%= info.title %></a>
             </h4>
         </div>
-        <div id="<%= help.id %>" class="panel-collapse collapse">
+        <div id="<%= info.id %>" class="panel-collapse collapse">
             <div class="panel-body">
-                    <%= help.description %>
+                    <%= info.description %>
             </div>
         </div>
     </div>

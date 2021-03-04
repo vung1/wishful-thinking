@@ -7,55 +7,13 @@
     <title>Wishful Thinking</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="../data.json"></script>
+    <script src="./js/facebook.js"></script>
     <link rel="stylesheet" href="/stylesheets/login.css">
 </head>
 
 <body class="d-flex text-white bg-dark">
-    <script>
-        function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
-          console.log('statusChangeCallback');
-          console.log(response);                   // The current login status of the person.
-          if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-            testAPI();  
-          } else {                                 // Not logged into your webpage or we are unable to tell.
-            document.getElementById('status').innerHTML = 'Please log ' +
-              'into this webpage.';
-          }
-        }
-      
-        function checkLoginState() {               // Called when a person is finished with the Login Button.
-          FB.getLoginStatus(function(response) {   // See the onlogin handler
-            statusChangeCallback(response);
-          });
-        }
-      
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '2635607500063399',
-            cookie     : true,                     // Enable cookies to allow the server to access the session.
-            xfbml      : true,                     // Parse social plugins on this webpage.
-            version    : 'v3.2'           // Use this Graph API version for this call.
-          });
-      
-          FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
-            statusChangeCallback(response);        // Returns the login status.
-          });
-        };
-       
-        function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-          console.log('Welcome!  Fetching your information.... ');
-          FB.api("/me?fields=name,picture.width(480),birthday", function(response) {
-            console.log('Successful login for: ' + response.name);
-            document.getElementById('status').innerHTML =
-              'Thanks for logging in, ' + response.name + '!';
-              const name = response.name;
-              const picture =  response.picture.data.url;
-              window.location = "/profile?name=" + name + "&profile_pic=" + picture;
-          });
-        }
-      
-      </script>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
             <div>
@@ -64,24 +22,25 @@
                         <a class="navbar-brand" href="#">Wishful Thinking</a>
                     </div>
                 </nav>
-                <div class="main">
+                <div class="main signin">
                   <p class="sign" align="center">Sign in</p>
                   <form class="form1">
                     <input class="un " type="text" align="center" placeholder="Username">
                     <input class="pass" type="password" align="center" placeholder="Password">
-                    <a class="submit" align="center" href="/profile">Sign in</a>
+                    <a class="submit mb-3" align="center" href="/profile">Sign in</a>
+                </form>
+                <div class="mt-4" align="center" >
+                    <fb:login-button  scope="public_profile,email" onlogin="checkLoginState();">
+                    </fb:login-button>
+                </div>
                 </div>
         </header> 
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-        </fb:login-button>
 <div id="status">
 </div>
 
 <!-- Load the JS SDK asynchronously -->
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>

@@ -1,6 +1,6 @@
 {
 	"me": {
-			"name": "Victor Ung",
+			"name": "Jisoo",
 			"birthday": "December 8",
 			"profileImage": "https://i.imgur.com/XVmQnQQ.png",
 			"wishlist": [
@@ -60,27 +60,29 @@
 		{
 			"name": "Amanda Kim",
 			"birthday": "March 1",
-			"month": "MAR",
+			"day": "1",
 			"profileImage": "https://i.imgur.com/jzi5bL8.png",
             "wishlist": [
 				{
 					"name": "Suitcase",
 					"description": "brown, new",
 					"price": "$10.00",
-					"link": "https://www.google.com/"
+					"link": "https://www.google.com/",
+					"condition": "Unreserved"
 				}, 
 				{
 					"name": "Lipstick",
 					"description": "to be professional",
 					"price": "$5.00",
-					"link": "https://www.google.com/"
+					"link": "https://www.google.com/",
+					"condition": "Unreserved"
 				}],
 			"id": "collapseOne"	
 		},
 		{
             "name": "Andrew Jackson",
 			"birthday": "March 15",
-			"month": "MAR",
+			"day": "15",
 			"profileImage": "https://i.imgur.com/SmbDDFj.jpg",
             "wishlist": [
 				{
@@ -101,7 +103,7 @@
 		{
             "name": "Brian Nguyen",
 			"birthday": "March 29",
-			"month": "MAR",
+			"day": "29",
 			"profileImage": "https://i.imgur.com/PkcLjPt.jpg",
             "wishlist": [
 				{
@@ -121,7 +123,7 @@
 		{
 			"name": "Mary Nguyen",
 			"birthday": "May 9",
-			"month": "MAY",
+			"day": "9",
 			"profileImage": "https://i.imgur.com/ggvppTI.jpg",
             "wishlist": [
 				{
@@ -141,7 +143,7 @@
 		{
             "name": "Minhtrang Chu",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
             "wishlist": [
 				{
@@ -161,7 +163,7 @@
 		{
             "name": "Paul Su",
 			"birthday": "November 1",
-			"month": "NOV",
+			"day": "1",
 			"profileImage": "https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/doctor/card/dr-paul-su-md-107-320x320-2x.jpg",
             "wishlist": [
 				{
@@ -180,8 +182,8 @@
 		},
 		{
             "name": "Paul Woo",
-			"birthday": "April 10",
-			"month": "APR",
+			"birthday": "December 10",
+			"day": "10",
 			"profileImage": "https://i.imgur.com/Tsjhis5.jpg",
             "wishlist": [
 				{
@@ -199,38 +201,28 @@
 			"id": "collapseSeven"
 		}
 	],
-	"help": [
+	"dates": [
 		{
-			"title": "What's the difference between the user's wishlist and other lists",
-			"description": "The user's wishlist is their primary, public wishlist that lets other users know what to get them for any occasion (Christmas, birthday, etc.). 'Other lists' refers to private lists where users can keep track of anything they want (i.e. brainstorm ideas for what they think would be a good gift for someone).",
-			"id": "collapseOne"
+			"name": "Spring Break",
+			"date": "April 7",
+			"description": "End of winter quarter and start of break!"
 		},
 		{
-			"title": "How do I view another user's public wishlist?",
-			"description": "To view another user's wishlist, you must add them as a friend.",
-			"id": "collapseTwo"
+			"name": "Zoom Birthday Party",
+			"date": "March 30",
+			"description": "Zoom link will be provided later."
 		},
 		{
-			"title": "How do I add a friend?",
-			"description": "To add a friend, navigate to the 'Friends' page using the navbar in the top right. Tap on the 'Add Friend' button at the top right corner. Search for the user and tap on 'Add Friend'",
-			"id": "collapseThree"
-		},
-		{
-			"title": "How do I add an item?",
-			"description": "On your profile page, you can add an item to your primary wishlist with a the 'add item' button on the right.",
-			"id": "collapseFour"
-		},
-		{
-			"title": "How do I a add an item to one of my other wishlist?",
-			"description": "Tap on the specific list you want to add an item to, which will redirect you to a page only for that wishlist. On that page, tap on the 'add item' button at the bottom.",
-			"id": "collapseFive"
-		}
+			"name": "Zoom Birthday Party2",
+			"date": "March 10",
+			"description": "Zoom link will be provided later."
+		}	
 	],
 	"strangers": [
 		{
 			"name": "Abby Apple",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -250,7 +242,7 @@
 		{
 			"name": "Brandon Berry",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -270,7 +262,7 @@
 		{
 			"name": "Carl Cook",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -290,7 +282,7 @@
 		{
 			"name": "Daniel Doofenshmirtz",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -310,7 +302,7 @@
 		{
 			"name": "Ethan Easter",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -330,7 +322,7 @@
 		{
 			"name": "Freddy Forensics",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -350,7 +342,7 @@
 		{
 			"name": "Gary Gill",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -370,7 +362,7 @@
 		{
 			"name": "Heather Honda",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -390,7 +382,7 @@
 		{
 			"name": "Isaac Int",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -410,7 +402,7 @@
 		{
 			"name": "Justin Jiffy",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -430,7 +422,7 @@
 		{
 			"name": "Krystal Kim",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -450,7 +442,7 @@
 		{
 			"name": "Lily Lim",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -470,7 +462,7 @@
 		{
 			"name": "Michael Meyers",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -490,7 +482,7 @@
 		{
 			"name": "Nathan Nolan",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -510,7 +502,7 @@
 		{
 			"name": "Oscar Oliver",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -530,7 +522,7 @@
 		{
 			"name": "Pauline Poo",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -550,7 +542,7 @@
 		{
 			"name": "Quinn Quest",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -570,7 +562,7 @@
 		{
 			"name": "Ryan Reynolds",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -590,7 +582,7 @@
 		{
 			"name": "Samantha Song",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -610,7 +602,7 @@
 		{
 			"name": "Tyler Tailor",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -630,7 +622,7 @@
 		{
 			"name": "Unduwap Usain",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -650,7 +642,7 @@
 		{
 			"name": "Victor Vo",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -670,7 +662,7 @@
 		{
 			"name": "William Williams",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -690,7 +682,7 @@
 		{
 			"name": "Xavier X-ray",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -710,7 +702,7 @@
 		{
 			"name": "Yoo Jin Yoo",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{
@@ -730,7 +722,7 @@
 		{
 			"name": "Zach Zucchini",
 			"birthday": "July 30",
-			"month": "JULY",
+			"day": "30",
 			"profileImage": "https://i.imgur.com/CIAIXV9.jpg",
 			"wishlist": [
 				{

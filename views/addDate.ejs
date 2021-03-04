@@ -3,25 +3,25 @@
     <div class="d-flex justify-content-center pb-3">
         <h1><u>Add Date</u></h1>
     </div>
-    <form>
+    <form method="get" action="/addMyDate">
         <div class="form-group">
         <label for="exampleFormControlInput1">Name:</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="name">
         </div>
         
         <div class="form-group mt-3">
             <label for="exampleFormControlInput1">Date:</label>
-            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="MM/DD/YYYY">
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="MM/DD/YYYY" name="date">
         </div>
 
         <div class="form-group mt-3">
             <label for="exampleFormControlTextarea1">Description:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
         </div>
 
         <div class="justify-content-center btn-toolbar mt-3">
             <a href="/calendar"><button type="button" class="btn btn-danger btn-sm mr-5">Cancel</button></a>
-            <a href="/addDateDummy"><button type="button" class="btn btn-success btn-sm">Add</button></a>
+            <input type="submit" class="btn btn-success btn-sm">
         </div>
     </form>
 </div>

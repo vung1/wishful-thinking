@@ -15,6 +15,7 @@ const usersRouter = require("./routes/users");
 const bodyParser = require("body-parser");
 
 const data = require("./data.json");
+const help = require("./help.json");
 
 const app = express();
 
@@ -46,7 +47,7 @@ app.use(function (err, req, res, next) {
 // app.use("/", indexRouter);
 // app.use("/users", usersRouter);
 
-const convertBirthday = (birthdayFormat) => {
+const convertDate = (birthdayFormat) => {
     let month = undefined;
     if (birthdayFormat.substring(5, 7) === "01") {
         month = "January";
@@ -74,17 +75,38 @@ const convertBirthday = (birthdayFormat) => {
         month = "December";
     }
 
-    const date = birthdayFormat.substring(8);
+    let date = birthdayFormat.substring(8);
+    if (date.substring(0, 1) === "0") {
+        date = date.substring(1);
+    }
 
     return month + " " + date;
 };
+
+app.get("/removeFriend/:friendName", (req, res) => {
+    const friendName = req.params.friendName;
+
+    let i;
+    let stranger = undefined;
+    for (i = 0; i < data.strangers.length; i++) {
+        if (data.friends[i].name === friendName) {
+            stranger = data.friends.splice(i, i + 1);
+            break;
+        }
+    }
+
+    console.log(data.friends);
+
+    data.strangers.push(stranger[0]);
+    res.render("friends", { data });
+});
 
 app.get("/editMe", function (req, res) {
     const name = req.query.name;
     let birthday = req.query.birthday;
     const profileImage = req.query.profileImage;
 
-    birthday = convertBirthday(birthday);
+    birthday = convertDate(birthday);
     data.me.name = name;
     data.me.birthday = birthday;
     data.me.profileImage = profileImage;
@@ -124,6 +146,16 @@ app.get("/addMyItem", function (req, res) {
     res.render("profile", { data });
 });
 
+app.get("/addMyDate", function (req, res) {
+    const name = req.query.name;
+    const date = convertDate(req.query.date);
+    const description = req.query.description;
+
+    const newDate = { name, date, description };
+    data.dates.push(newDate);
+    res.redirect("calendar");
+});
+
 const formatDate = (date) => {
     const month = date.substring(5, 7);
     const day = date.substring(8);
@@ -151,10 +183,22 @@ app.get("/", (req, res) => {
 });
 
 app.get("/signout", (req, res) => {
+    data.me.name = "Jisoo";
+    data.me.profileImage = "https://i.imgur.com/XVmQnQQ.png";
     res.redirect("/");
 });
 
 app.get("/profile", (req, res) => {
+    const link = req._parsedOriginalUrl.href;
+    if (link.length > 8) {
+        let name = link.substring(14, link.indexOf("profile_pic") - 1);
+        name = name.replace("%20", " ");
+        const profileImage = link.substring(link.indexOf("profile_pic") + 12);
+        console.log(data.me.name);
+
+        data.me.name = name;
+        data.me.profileImage = profileImage;
+    }
     res.render("profile", { data });
 });
 
@@ -176,20 +220,106 @@ app.get("/addFriendList/:friendName", (req, res) => {
 
     data.friends.push(newFriend[0]);
 
+    // res.redirect("friends");
     res.render("friends", { data });
 });
 
-app.get("/calendar", (req, res) => {
+const convertMonth = (date) => {
+    if (date === "January") {
+        return 1;
+    } else if (date === "February") {
+        return 2;
+    } else if (date === "March") {
+        return 3;
+    } else if (date === "April") {
+        return 4;
+    } else if (date === "May") {
+        return 5;
+    } else if (date === "June") {
+        return 6;
+    } else if (date === "July") {
+        return 7;
+    } else if (date === "August") {
+        return 8;
+    } else if (date === "September") {
+        return 9;
+    } else if (date === "October") {
+        return 10;
+    } else if (date === "November") {
+        return 11;
+    } else if (date === "December") {
+        return 12;
+    }
+};
+
+const compare = (date1, date2) => {
+    const month1 = date1.substring(0, date1.indexOf(" "));
+    const month2 = date2.substring(0, date2.indexOf(" "));
+
+    const numMonth1 = convertMonth(month1);
+    const numMonth2 = convertMonth(month2);
+
+    if (numMonth1 > numMonth2) {
+        return true;
+    } else if (numMonth1 === numMonth2) {
+        console.log("HERE");
+        const day1 = date1.substring(date1.indexOf(" ") + 1);
+        const day2 = date2.substring(date2.indexOf(" ") + 1);
+
+        if (parseInt(day1) > parseInt(day2)) {
+            console.log("IN RETURN");
+            return true;
+        }
+    }
+};
+
+const sortDate = () => {
+    for (let i = 0; i < data.dates.length - 1; i++) {
+        for (let j = 0; j < data.dates.length - i - 1; j++) {
+            const date1 = data.dates[j].date;
+            const date2 = data.dates[j + 1].date;
+
+            if (compare(date1, date2) == true) {
+                const temp = data.dates[j];
+                data.dates[j] = data.dates[j + 1];
+                data.dates[j + 1] = temp;
+            }
+        }
+    }
+};
+
+app.get("/calendar", async (req, res) => {
+    for (friend of data.friends) {
+        let existed = false;
+        for (date of data.dates) {
+            if (date.name === friend.name + "'s " + "Birthday") {
+                existed = true;
+            }
+        }
+        if (!existed) {
+            const name = friend.name + "'s " + "Birthday";
+            const date = friend.birthday;
+            const description = "Wish " + friend.name + " a happy birthday!";
+            const newDate = { name, date, description };
+            data.dates.push(newDate);
+        }
+    }
+
+    sortDate();
     res.render("calendar", { data });
 });
 
 app.get("/help", (req, res) => {
-    res.render("help", { data });
+    res.render("help", { help });
 });
 
 app.get("/addItem/:name", (req, res) => {
     const name = req.params.name;
     res.render("addItem", { name });
+});
+
+app.get("/addFriend", (req, res) => {
+    res.render("addFriend", { data });
 });
 
 app.get("/addFriendItem/:person", (req, res) => {
@@ -278,18 +408,6 @@ app.get("/listDetails/:name", (req, res) => {
     res.render("listDetails", { wishlistDetails });
 });
 
-app.get("/addFriend", (req, res) => {
-    res.render("addFriend", { data });
-});
-
-app.get("/addFriendDummy", (req, res) => {
-    res.render("addFriendDummy", { data });
-});
-
-app.get("/searchDummy", (req, res) => {
-    res.render("searchDummy");
-});
-
 app.get("/loading", (req, res) => {
     res.render("loading");
 });
@@ -302,16 +420,12 @@ app.get("/dateDetails", (req, res) => {
     res.render("dateDetails");
 });
 
-app.get("/addDateDummy", (req, res) => {
-    res.render("addDateDummy", { data });
-});
-
 app.get("/register", (req, res) => {
     res.render("register");
 });
 
 app.get("/addDate", (req, res) => {
-    res.render("addDate");
+    res.render("addDate", { data });
 });
 
 http.createServer(app).listen(app.get("port"), function () {

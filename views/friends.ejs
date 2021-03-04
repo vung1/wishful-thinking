@@ -1,4 +1,8 @@
 <% layout('layouts/boilerplate')%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="./js/reserve.js"></script>
+
+
 <div class="d-flex justify-content-between">
   <h2 class="mb-4"><u>Friend's List</u></h2>
   <a href="/addFriend"><button type="button" class="btn btn-success btn-sm">Add Friend</button></a>
@@ -13,7 +17,9 @@
             <div class="col-9">
               <h3><%= friend.name %></h3>
               <h6>Birthday: <%= friend.birthday %></h6>
-              <button style="padding: .25rem .4rem; font-size: .875rem; line-height: .5; border-radius: .2rem" class="btn btn-danger">Delete</button>
+              <form method="GET" action="/removeFriend/<%= friend.name %>">
+                <button style="padding: .25rem .4rem; font-size: .875rem; line-height: .5; border-radius: .2rem" class="btn btn-danger">Delete</button>
+              </form>
             </div>
           </div>
         <div class="panel-group" id="accordion">
@@ -27,7 +33,12 @@
                 <div class="panel-body">
                   <ul>
                     <% for (let item of friend.wishlist){%>
-                      <li class="mb-2" style="color: #4D8BFF"><a href="/itemDetails/<%=friend.name%>/<%=item.name%>"><%=item.name%></a></li>
+                    <div class="wishlist">
+                      <li class="row mb-2">
+                        <a class="col-10 object" style="color: #4D8BFF" href="/itemDetails/<%=friend.name%>/<%=item.name%>"><%=item.name%></a>
+                        <button style="width: 90px" class="btn btn-success btn-sm col-2">Unreserved</button>
+                      </li>
+                    </div>
                     <% } %>
                   </ul>
                 </div>
