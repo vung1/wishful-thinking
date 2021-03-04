@@ -183,7 +183,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/signout", (req, res) => {
-    data.me.name = "Jisoo";
+    data.me.name = "John Doe";
     data.me.profileImage = "https://i.imgur.com/XVmQnQQ.png";
     res.redirect("/");
 });
