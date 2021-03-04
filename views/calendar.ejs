@@ -9,39 +9,6 @@
 			<h2 class="mb-4"><u>Dates</u></h2>
 			<a href="/addDate"><button type="button" class="btn btn-success btn-sm">Add Date</button></a>
 		</div>
-		<!-- <% for (let friend of data.friends) { %>
-			<div class="row row-striped">
-				<div class="col-md-2 text-right">
-					<h1 class="display-5"><span class="badge badge-secondary"><%= friend.day %></span></h1>
-					<h4><%= friend.month %></h4>
-				</div>
-				<div class="col-md-10">
-					<h3 class="text-uppercase"><strong><%= friend.name %>'s Birthday</strong></h3>
-					<p><%= friend.description %></p>
-				</div>      
-			</div> -->
-			<!-- <% } %> -->
-
-			<!-- <ul class="list-group list-group-flush">
-				<% for (let friend of data.friends) { %>
-					<div class="d-flex">
-						<li class="list-group-item"><%= friend.birthday %> <%= friend.name %>'s Birthday</li>
-					</div>
-				<% } %>
-			  </ul> -->
-		
-
-		<!-- <div class="list-group">
-			<% for (let friend of data.friends) { %>
-			<div class="list-group-item list-group-item-action flex-column align-items-start mb-3" id="id01">
-			  		<div class="d-flex w-100 justify-content-between">
-						<h5 class="mb-1"><%= friend.name %>'s Birthday</h5>
-						<%= friend.birthday %>
-			  		</div>
-			  	<p class="mb-1"><%= friend.description %></p>
-			</div>
-			<% } %>
-		</div> -->
 
 		<div class="list-group">
 			<% for (let date of data.dates ){%>
@@ -56,38 +23,3 @@
 			</div>
 		  
 	</div>
-
-	<!-- <script>
-		function sortList() {
-		  var list, i, switching, b, shouldSwitch;
-		  list = document.getElementById("id01");
-		  switching = true;
-		  /* Make a loop that will continue until
-		  no switching has been done: */
-		  while (switching) {
-			// Start by saying: no switching is done:
-			switching = false;
-			b = list.getElementsByTagName("LI");
-			// Loop through all list items:
-			for (i = 0; i < (b.length - 1); i++) {
-			  // Start by saying there should be no switching:
-			  shouldSwitch = false;
-			  /* Check if the next item should
-			  switch place with the current item: */
-			  if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-				/* If next item is alphabetically lower than current item,
-				mark as a switch and break the loop: */
-				shouldSwitch = true;
-				break;
-			  }
-			}
-			if (shouldSwitch) {
-			  /* If a switch has been marked, make the switch
-			  and mark the switch as done: */
-			  b[i].parentNode.insertBefore(b[i + 1], b[i]);
-			  switching = true;
-			}
-		  }
-		}
-		</script> -->
-	

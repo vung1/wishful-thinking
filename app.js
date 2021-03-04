@@ -409,20 +409,8 @@ app.get("/listDetails/:name", (req, res) => {
     res.render("listDetails", { wishlistDetails });
 });
 
-app.get("/loading", (req, res) => {
-    res.render("loading");
-});
-
 app.get("/editProfile", (req, res) => {
     res.render("editProfile");
-});
-
-app.get("/dateDetails", (req, res) => {
-    res.render("dateDetails");
-});
-
-app.get("/register", (req, res) => {
-    res.render("register");
 });
 
 app.get("/addDate", (req, res) => {
