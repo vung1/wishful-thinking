@@ -23,7 +23,7 @@ function checkLoginState() {
 window.fbAsyncInit = function () {
     FB.init({
         // appId: "2635607500063399",
-        appId: "1187449971671603",
+        appId: "2635607500063399",
         cookie: true, // Enable cookies to allow the server to access the session.
         xfbml: true, // Parse social plugins on this webpage.
         version: "v3.2", // Use this Graph API version for this call.
