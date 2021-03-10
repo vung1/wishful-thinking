@@ -28,7 +28,12 @@
             <ul class="list-group list-group-flush">
                 <% if (wishlistDetails.items) { %>
                     <% for (let item of wishlistDetails.items ){%>
-                        <li class="list-group-item"><a href="/listItemDetails/<%=wishlistDetails.name%>/<%=item.name%>"><%=item.name%></a></li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <a href="/listItemDetails/<%=wishlistDetails.name%>/<%=item.name%>"><%=item.name%></a>
+                                <form method="GET" action="/removeListDetailsItem/<%=wishlistDetails.name%>/<%=item.name%>">
+                                    <button style="border: none; background-color: white;">Delete Item</button>
+                                </form>
+                            </li>
                     <% } %>
                 <% } %>
               </ul>

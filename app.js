@@ -289,27 +289,6 @@ const sortDate = () => {
     }
 };
 
-app.get("/calendar", async (req, res) => {
-    for (friend of data.friends) {
-        let existed = false;
-        for (date of data.dates) {
-            if (date.name === friend.name + "'s " + "Birthday") {
-                existed = true;
-            }
-        }
-        if (!existed) {
-            const name = friend.name + "'s " + "Birthday";
-            const date = friend.birthday;
-            const description = "Wish " + friend.name + " a happy birthday!";
-            const newDate = { name, date, description };
-            data.dates.push(newDate);
-        }
-    }
-
-    sortDate();
-    res.render("calendar", { data });
-});
-
 app.get("/help", (req, res) => {
     res.render("help", { help });
 });
@@ -415,6 +394,80 @@ app.get("/editProfile", (req, res) => {
 
 app.get("/addDate", (req, res) => {
     res.render("addDate", { data });
+});
+
+app.get("/removeWishlistItem/:itemName", (req, res) => {
+    const itemName = req.params.itemName;
+
+    for (let i = 0; i < data.me.wishlist.length; i++) {
+        if (data.me.wishlist[i].name === itemName) {
+            data.me.wishlist.splice(i, i + 1);
+        }
+    }
+
+    res.render("profile", { data });
+});
+
+app.get("/removeListDetails/:name", (req, res) => {
+    const name = req.params.name;
+
+    for (let i = 0; i < data.me.wishlistIdeas.length; i++) {
+        if (data.me.wishlistIdeas[i].name === name) {
+            data.me.wishlistIdeas.splice(i, i + 1);
+        }
+    }
+
+    res.render("profile", { data });
+});
+
+app.get("/removeListDetailsItem/:name/:itemName", (req, res) => {
+    const name = req.params.name;
+    const itemName = req.params.itemName;
+
+    for (let i = 0; i < data.me.wishlistIdeas.length; i++) {
+        for (let j = 0; j < data.me.wishlistIdeas[i].items.length; j++) {
+            if (data.me.wishlistIdeas[i].items[j].name === itemName) {
+                data.me.wishlistIdeas[i].items.splice(j, j + 1);
+            }
+        }
+    }
+
+    res.redirect("back");
+});
+
+let ifCalled = false;
+
+app.get("/calendar", async (req, res) => {
+    for (friend of data.friends) {
+        let existed = false;
+        for (date of data.dates) {
+            if (date.name === friend.name + "'s " + "Birthday") {
+                existed = true;
+            }
+        }
+        if (!existed && !ifCalled) {
+            const name = friend.name + "'s " + "Birthday";
+            const date = friend.birthday;
+            const description = "Wish " + friend.name + " a happy birthday!";
+            const newDate = { name, date, description };
+            data.dates.push(newDate);
+        }
+    }
+    ifCalled = true;
+    sortDate();
+    res.render("calendar", { data });
+});
+
+app.get("/removeCalendarItem/:name/", (req, res) => {
+    const name = req.params.name;
+
+    for (let i = 0; i < data.dates.length; i++) {
+        if (data.dates[i].name === name) {
+            data.dates.splice(i, i + 1);
+        }
+    }
+
+    res.render("calendar", { data });
 });
 
 http.createServer(app).listen(app.get("port"), function () {

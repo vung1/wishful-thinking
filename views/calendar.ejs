@@ -1,9 +1,8 @@
 <% layout('layouts/boilerplate')%>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 <!------ Include the above in your HEAD tag ---------->
-	
 	<div class="container">
 		<div class="d-flex justify-content-between">
 			<h2 class="mb-4"><u>Dates</u></h2>
@@ -15,7 +14,12 @@
 				<div class="list-group-item list-group-item-action flex-column align-items-start mb-3" id="id01">
 					<div class="d-flex w-100 justify-content-between">
 					  <h5 class="mb-1"><%= date.name %></h5>
-					  <%= date.date %>
+					  <div class>
+						<p style="margin-bottom: 0"><%= date.date %></p>
+						<form method="GET" action="/removeCalendarItem/<%= date.name %>">
+							<button style="border: none; background-color: white; color: red; padding: 0; float: right;">Delete</button>
+						</form>
+					  </div>
 					</div>
 				<p class="mb-1"><%= date.description %></p>
 		  </div>

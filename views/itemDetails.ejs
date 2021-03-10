@@ -19,4 +19,7 @@
         <h4><b>Link: </b></h4>
         <p><u><a style="color: #518BEB" href="<%=itemDetail.link%>"><i><%=itemDetail.link%></i></a></u></p> 
     </div>
+    <form method="GET" action="/removeWishlistItem/<%=itemDetail.itemName%>">
+        <button class="btn btn-danger mt-4">Delete Item</button>
+    </form>
 </div>
