@@ -90,7 +90,7 @@ app.get("/removeFriend/:friendName", (req, res) => {
     let stranger = undefined;
     for (i = 0; i < data.strangers.length; i++) {
         if (data.friends[i].name === friendName) {
-            stranger = data.friends.splice(i, i + 1);
+            stranger = data.friends.splice(i, 1);
             break;
         }
     }
@@ -214,7 +214,7 @@ app.get("/addFriendList/:friendName", (req, res) => {
 
     for (i = 0; i < data.strangers.length; i++) {
         if (data.strangers[i].name === friendName) {
-            newFriend = data.strangers.splice(i, i + 1);
+            newFriend = data.strangers.splice(i, 1);
             break;
         }
     }
@@ -401,7 +401,7 @@ app.get("/removeWishlistItem/:itemName", (req, res) => {
 
     for (let i = 0; i < data.me.wishlist.length; i++) {
         if (data.me.wishlist[i].name === itemName) {
-            data.me.wishlist.splice(i, i + 1);
+            data.me.wishlist.splice(i, 1);
         }
     }
 
@@ -413,7 +413,7 @@ app.get("/removeListDetails/:name", (req, res) => {
 
     for (let i = 0; i < data.me.wishlistIdeas.length; i++) {
         if (data.me.wishlistIdeas[i].name === name) {
-            data.me.wishlistIdeas.splice(i, i + 1);
+            data.me.wishlistIdeas.splice(i, 1);
         }
     }
 
@@ -427,7 +427,7 @@ app.get("/removeListDetailsItem/:name/:itemName", (req, res) => {
     for (let i = 0; i < data.me.wishlistIdeas.length; i++) {
         for (let j = 0; j < data.me.wishlistIdeas[i].items.length; j++) {
             if (data.me.wishlistIdeas[i].items[j].name === itemName) {
-                data.me.wishlistIdeas[i].items.splice(j, j + 1);
+                data.me.wishlistIdeas[i].items.splice(j, 1);
             }
         }
     }
@@ -463,7 +463,7 @@ app.get("/removeCalendarItem/:name/", (req, res) => {
 
     for (let i = 0; i < data.dates.length; i++) {
         if (data.dates[i].name === name) {
-            data.dates.splice(i, i + 1);
+            data.dates.splice(i, 1);
         }
     }
 

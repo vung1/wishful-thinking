@@ -4,13 +4,13 @@
 
 
 <div class="d-flex justify-content-between">
-  <h2 class="mb-4"><u>Friend's List</u></h2>
+  <h2 class="mb-4" style="color: #3C1518"><u>Friend's List</u></h2>
   <a href="/addFriend"><button type="button" class="btn btn-success btn-sm">Add Friend</button></a>
 </div>
-<div class="container shadow">
+<div class="container shadow" style="background-color: white;">
     <div class="top mb-3">
     </div>
-    <div>
+    <div style="background-color: white;">
       <% for (let friend of data.friends){%>
           <div class="row">
             <img class=".img-responsive col-3" width="100px" src='<%=friend.profileImage %>' />

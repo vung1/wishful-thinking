@@ -1,23 +1,27 @@
 <% layout('layouts/boilerplate')%>
 <script src="./js/friends.js"></script>
 
-<h2 class="text-center mb-4"> Search for a Friend</h2>
-<div id="custom-search-input">
-    <div class="justify-content-center"> <!-- removed input-group-->
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-        <ul id="myUL">
-        <% for (let stranger of data.strangers){%>   
-             <form class="container" method="GET" action="/addFriendList/<%=stranger.name%>" >
-                <li class="row mb-2">
-                  <a class="col-10" href="#"><%=stranger.name%></a>
-                  <input type="submit" class="btn btn-success col-2" value="Add Friend">
-                </li>
-            </form>
-        <% } %>
-        </ul>
+<div style="margin-bottom: 75px" container pb-100" style="background-color: #EDE1D4;">
+    <img class="mb-3" style="cursor: pointer;" src="https://static.thenounproject.com/png/344330-200.png" alt="" onclick="history.back()" width="50">
+    <h2 class="text-center" style="color: #3C1518"> Search for a Friend</h2>
+    <div id="custom-search-input">
+        <div class="justify-content-center"> <!-- removed input-group-->
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+            <ul id="myUL">
+            <% for (let stranger of data.strangers){%>   
+                 <form class="container" method="GET" action="/addFriendList/<%=stranger.name%>" >
+                    <li class="row mb-2">
+                      <a class="col-9" href="#"><%=stranger.name%></a>
+                      <input type="submit" class="btn btn-success col-3" value="Add">
+                    </li>
+                </form>
+            <% } %>
+            </ul>
+        </div>
     </div>
 </div>
 
-<div class="justify-content-center d-flex mt-5">
+
+<!-- <div class="justify-content-center d-flex mt-5">
     <a href="/friends"><button type="button" class="btn btn-danger btn-sm">Cancel</button></a>
-</div>
+</div> -->

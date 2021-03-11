@@ -24,6 +24,11 @@
             "title": "How do I a add an item to one of my other wishlist?",
             "description": "Tap on the specific list you want to add an item to, which will redirect you to a page only for that wishlist. On that page, tap on the 'add item' button at the bottom.",
             "id": "collapseFive"
+        },
+        {
+            "title": "What's the difference between unreserved and reserved on your friend's wishlist",
+            "description": "Reserved means that someone is planning to buy that item for that person already. Unreserved means no one is planning to buy that item",
+            "id": "collapseSix"
         }
     ]
 }
