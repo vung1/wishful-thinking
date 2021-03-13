@@ -13,7 +13,7 @@
     <div style="background-color: white;">
       <% for (let friend of data.friends){%>
           <div class="row">
-            <img class=".img-responsive col-3" style="max-width: 100" height="100" width="100px" src='<%=friend.profileImage %>' />
+            <img class=".img-responsive col-3" width="100px" src='<%=friend.profileImage %>' />
             <div class="col-9">
               <h3><%= friend.name %></h3>
               <h6>Birthday: <%= friend.birthday %></h6>
@@ -35,7 +35,7 @@
                     <% for (let item of friend.wishlist){%>
                     <div class="wishlist">
                       <li class="row mb-2">
-                        <a class="col-10 object" style="color: #4D8BFF" href="/itemDetails/<%=friend.name%>/<%=item.name%>"><%=item.name%></a>
+                        <a class="col-10 object" style="color: #4D8BFF; padding: 0" href="/itemDetails/<%=friend.name%>/<%=item.name%>"><%=item.name%></a>
                         <button style="width: 90px" class="btn btn-success btn-sm col-2">Unreserved</button>
                       </li>
                     </div>
