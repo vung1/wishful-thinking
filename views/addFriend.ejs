@@ -9,7 +9,7 @@
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
             <ul id="myUL">
             <% for (let stranger of data.strangers){%>   
-                 <form class="container" method="GET" action="/addFriendList/<%=stranger.name%>" >
+                 <form class="container" method="GET" action="/addFriendList/<%=stranger.name%>" autocomplete="off" >
                     <li class="row mb-2">
                       <a class="col-9" href="#"><%=stranger.name%></a>
                       <input type="submit" class="btn btn-success col-3" value="Add">
