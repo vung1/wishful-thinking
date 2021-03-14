@@ -27,7 +27,7 @@
             <p class="text"><a href="/addList" style="color: #395129; font-weight: bold">add list</a></p>
         </div>
         <div class="text">
-            <ul class="list-group list-group-flush">
+            <ul class="list-group list-group-flush"> 
                 <% for (let wishlist of data.me.wishlistIdeas ){%>
                     <li class="list-group-item"><a href="/listDetails/<%=wishlist.name%>"><%=wishlist.name%> | <%=wishlist.occasion%></a> </li>
                 <% } %>
